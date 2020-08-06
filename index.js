@@ -80,9 +80,6 @@ function calulatePercentage(num1) {
 
 $("#equals").click(function () {
     if (dp.text() == 0) dp.text("0");
-    else if (arr[arr.length-1] == dp.text()) {
-        dp.text() == dp.text();
-    }
     else {
         num2 = parseFloat(dp.text());
         arr.push(num2);
@@ -117,10 +114,7 @@ function solve() {
     } else if (a.toString().length > 12) {
         ans = ans.toPrecision(5);
     }
-
-    arr.push(ans);
-    console.log(typeof(ans));
-    console.log(arr);
+    
     dp.text(ans);
 }
 
