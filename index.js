@@ -114,7 +114,7 @@ function solve() {
     } else if (a.toString().length > 12) {
         ans = ans.toPrecision(5);
     }
-    arr.push(ans);
+    
     dp.text(ans);
 }
 
